@@ -35,3 +35,21 @@ check the list of projects firebase project
 ### Populate Firestore with development data
 
 node .\src\test\populateFirestore.js
+
+### Add Cloud Functions to a project
+
+> firebase init
+
+select Functions: Configure and deploy Cloud Functions
+then Use an existing project
+cd .\functions\
+to support modern java script syntax
+npm install --save-dev @babel/core @babel/cli @babel/preset-env
+npm install regenerator-runtime
+
+cd..
+npm install --save-de nodemon concurrently
+cd .\functions\
+npm run build
+
+firebase deploy --only functions
