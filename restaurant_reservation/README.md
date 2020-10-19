@@ -31,3 +31,7 @@ then run
 
 check the list of projects firebase project
 > firebase projects:list
+
+### Populate Firestore with development data
+
+node .\src\test\populateFirestore.js

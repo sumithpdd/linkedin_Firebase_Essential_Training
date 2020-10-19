@@ -12,7 +12,7 @@ const twoWeeksTwoDaysFromNow = moment().add(2, 'weeks').add(2, 'days');
 const reservations = [{
     id: '12345',
     restaurantId: '123',
-    userId: '<your-user-id>', // replace these userIds with your own
+    userId: 'lW3b7eQnMBbJ9FZarjRx4IxEkir1', // replace these userIds with your own
     date: dateFormat(twoWeeksFromNow),
     time: '7:00PM',
     numberOfPeople: 2,
@@ -20,7 +20,7 @@ const reservations = [{
 }, {
     id: '12346',
     restaurantId: '345',
-    userId: '<your-user-id>',
+    userId: 'lW3b7eQnMBbJ9FZarjRx4IxEkir1',
     date: dateFormat(twoWeeksOneDayFromNow),
     time: '6:30PM',
     numberOfPeople: 2,
@@ -28,7 +28,7 @@ const reservations = [{
 }, {
     id: '12347',
     restaurantId: '678',
-    userId: '<your-user-id>',
+    userId: 'lW3b7eQnMBbJ9FZarjRx4IxEkir1',
     date: dateFormat(twoWeeksTwoDaysFromNow),
     time: '8:00PM',
     numberOfPeople: 4,
@@ -39,11 +39,11 @@ const reviews = [{
     id: '111111',
     reservationId: '12345',
     restaurantId: '123',
-    userId: '<your-user-id>',
+    userId: 'lW3b7eQnMBbJ9FZarjRx4IxEkir1',
     rating: 4.0,
-    // replace the "<your-project-id>" with the app id you choose during setup. These links won't
+    // replace the "todo-flutter-8a80f" with the app id you choose during setup. These links won't
     // point to anything until we upload these files to Cloud Storage.
-    photoUrls: ['https://storage.googleapis.com/<your-project-id>.appspot.com/reviewPhotos/hemingways-review-1.jpeg'],
+    photoUrls: ['https://storage.googleapis.com/todo-flutter-8a80f.appspot.com/reviewPhotos/hemingways-review-1.jpeg'],
     text: `
         I really like this place. Their take on pot roast is sublime, and
         my mouth is watering right now just thinking about it. The one thing
@@ -103,7 +103,7 @@ const dateAvailabilities = [{
 const restaurants = [{
     id: '123',
     name: 'Hemingway\'s',
-    imageUrl: 'https://storage.googleapis.com/<your-project-id>.appspot.com/restaurants/hemingways.jpeg',
+    imageUrl: 'https://storage.googleapis.com/todo-flutter-8a80f.appspot.com/restaurants/hemingways.jpeg',
     rating: 4.0,
     address: {
         street: '123 Someone Street',
@@ -121,7 +121,7 @@ const restaurants = [{
 }, {
     id: '345',
     name: 'Ben\'s Burgers',
-    imageUrl: 'https://storage.googleapis.com/<your-project-id>.appspot.com/restaurants/bens-burgers.jpeg',
+    imageUrl: 'https://storage.googleapis.com/todo-flutter-8a80f.appspot.com/restaurants/bens-burgers.jpeg',
     rating: 3.5,
     address: {
         street: '5 Burger Lane',
@@ -133,11 +133,11 @@ const restaurants = [{
         All of the toppings, all of the grease! Ben's Burgers
         is hands-down the best burger joint in town.
     `,
-    tags: ['burgers', 'greasy', 'family-friendly'], 
-},{
+    tags: ['burgers', 'greasy', 'family-friendly'],
+}, {
     id: '678',
     name: 'Le Mollusc',
-    imageUrl: 'https://storage.googleapis.com/<your-project-id>.appspot.com/restaurants/le-mollusc.jpeg',
+    imageUrl: 'https://storage.googleapis.com/todo-flutter-8a80f.appspot.com/restaurants/le-mollusc.jpeg',
     rating: 4.5,
     address: {
         street: '7 Fancy Avenue',
@@ -150,7 +150,7 @@ const restaurants = [{
         freshest seafood anywhere. Since 1988, it has delivered on this goal,
         and has become one of the most celebrated seafood restaurants around.
     `,
-    tags: ['seafood', 'french', 'oysters'], 
+    tags: ['seafood', 'french', 'oysters'],
 }];
 
 module.exports = {
